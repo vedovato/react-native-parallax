@@ -53,7 +53,7 @@ var ParallaxScrollViewComposition = React.createClass({
   },
 
   render: function() {
-    var { ref, children, scrollViewComponent, onScroll, ...props } = this.props;
+    var { children, scrollViewComponent, onScroll, ...props } = this.props;
     var { scrollY } = this.state;
     var ScrollComponent = scrollViewComponent || ScrollView;
     var handleScroll = (onScroll
@@ -63,12 +63,6 @@ var ParallaxScrollViewComposition = React.createClass({
     children = children && applyPropsToParallaxImages(children, { scrollY });
     return (
       <ScrollComponent
-        ref={component => {
-          this._root = component;
-          if(typeof ref === 'function') {
-            ref(component);
-          }
-        }}
         scrollEventThrottle={16}
         onScroll={handleScroll}
         {...props}
