@@ -1,7 +1,7 @@
 # react-native-parallax
 
-**NOTE #1: This module requires React Native 0.8+**
-**NOTE #2: It works without warnings/errors on newer RN versions (tested on .30, .31 & .32)**
+- **NOTE #1: This module requires React Native 0.8+**
+- **NOTE #2: It works without warnings/errors on newer RN versions (tested on .30, .31 & .32)**
 
 ## Installation
 
